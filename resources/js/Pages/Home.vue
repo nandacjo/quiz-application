@@ -1,9 +1,9 @@
 <script setup>
-
+import Layout from '../Shared/Layout.vue';
 </script>
 
 <template>
-  <div class="container mt-3 alert alert-success">
+  <Layout>
     <h1>Helo Inertia Laravel Vue</h1>
-  </div>
+  </Layout>
 </template>
