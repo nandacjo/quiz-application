@@ -17,7 +17,16 @@ return new class extends Migration
             $table->foreignId('question_id')->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->boolean('correct_answer'); //1-correct, 0-wrong
+            $table->boolean('correct_answer'); //1-correct, 0-wrongfunction validateAnswers() {
+//   for (const answer of newAnswers.value) {
+//     if (answer.answer.trim() === '') {
+//       return false;
+//     }else if(answer.correct_answer !== 1){
+//       return false
+//     }
+//   }
+//   return true;
+// }
             $table->timestamps();
         });
     }
